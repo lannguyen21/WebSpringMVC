@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Sign up</title>
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	rel="stylesheet" id="bootstrap-css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+
+<style>
+.container button {
+	background-color: #000;
+	margin: 30px 0;
+	border: none;
+	width: 100%;
+	padding: 15px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.container input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.container button:hover {
+	background-color: #ffd500;
+}
+
+.container input {
+	margin-bottom: 30px;
+}
+
+.container a {
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.container a:hover {
+	color: #ffd500;
+}
+</style>
+
+</head>
+
+<body>
+
+	<div style="padding: 3em 0;"></div>
+
+	<div class="container" style="margin: 0 auto; width: 750px">
+		<form role="form" method="POST" th:action="@{/signup}"
+			th:object="${user}">
+
+			<div class="row">
+				<div class="alert alert-success" role="alert" th:if="${msg}"
+					th:utext="${msg}"></div>
+			</div>
+
+				<h2 style="left: 40%; padding-bottom: 40px">Sign Up</h2>
+
+			<div class="field-label-responsive">
+				<label for="name"><b>First Name</b></label>
+			</div>
+
+			<div class="form-group">
+				<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+
+					<input type="text" th:field="*{firstname}" class="form-control"
+						id="firstname" placeholder="First Name" required autofocus>
+				</div>
+			</div>
+
+
+			<div class="field-label-responsive">
+				<label for="name"><b>Last Name</b></label>
+			</div>
+			<div class="form-group">
+				<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+
+					<input type="text" th:field="*{lastname}" class="form-control"
+						id="lastname" placeholder="Last name" required autofocus>
+				</div>
+			</div>
+
+
+			<div class="field-label-responsive">
+				<label for="email"><b>Email</b></label>
+			</div>
+
+			<div class="form-group">
+				<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+
+					<input type="text" th:field="*{email}" class="form-control"
+						id="email" placeholder="username@hiddenus.com" required
+						autofocus>
+				</div>
+			</div>
+
+			<div class="form-control-feedback">
+				<span class="text-danger align-middle"
+					th:if="${#fields.hasErrors('email')}" th:errors="*{email}">
+				</span>
+			</div>
+
+				<div class="field-label-responsive">
+					<label for="password"><b>Password</b></label>
+				</div>
+				<div class="form-group has-danger">
+					<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+
+						<input type="password" th:field="*{password}" class="form-control"
+							id="password" placeholder="Password" required>
+					</div>
+				</div>
+				<div class="form-control-feedback">
+					<span class="text-danger align-middle"
+						th:if="${#fields.hasErrors('password')}" th:errors="*{password}">
+					</span>
+				</div>
+
+				<button type="submit" class="btn btn-success">
+					<i class="fa fa-user-plus"></i> Register
+				</button>
+				
+				<a th:href="@{/login}">I already have an account</a>
+
+		</form>
+	</div>
+</body>
+</html>
