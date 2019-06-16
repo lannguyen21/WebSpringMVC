@@ -1,0 +1,62 @@
+ <base href="/">
+
+<!--css files-->
+  <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div id="logo" >
+    <a title="Home" href="main.html"><img src="/images/logo-2.png" alt="png" /></a>
+  </div>
+
+  <!--=================================Header==================================-->
+    <div id="navbar" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+      <ul class="nav-link a">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item">
+          <a href="#">Men</a>
+          <div>
+            <ul>
+              <li><a href="#">Long Sleeves</a></li>
+              <li><a href="#">Short Sleeves</a></li>
+              <li><a href="#">Polo</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">Women</a>
+          <div>
+            <ul>
+              <li><a href="#">Long sleeves</a></li>
+              <li><a href="#">Short sleeves</a></li>
+              <li><a href="#">Polo</a></li>
+              <li><a href="#">Apple</a></li>
+              <li><a href="#">Croptop</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">Kids</a>
+          <div>
+            <ul>
+              <li><a href="#">Boys</a></li>
+              <li><a href="#">Girls</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+            
+      <ul class="nav-link">
+        <li class="nav-item"><a th:href="@{/login}">Sign In</a></li>
+        <li class="nav-item"><a th:href="@{/signup}">Sign Up</a></li>
+        <li class="nav-item"><a href="#"><i class="fa fa-opencart"></i></a></li>
+        <li class="nav-item"><a href="#"><i class="fa fa-search"></i></a></li>
+      </ul>
+      
+    </div>
