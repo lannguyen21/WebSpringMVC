@@ -92,3 +92,4 @@ alter table ORDER_DETAILS
   
   
 INSERT INTO role VALUES (1,'ADMIN');
+INSERT INTO role(role) values ('USER');
