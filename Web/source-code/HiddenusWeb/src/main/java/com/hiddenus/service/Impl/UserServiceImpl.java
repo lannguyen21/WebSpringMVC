@@ -12,6 +12,7 @@ import com.hiddenus.service.UserService;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.List;
 
 @Service("userService")
 public class UserServiceImpl implements UserService {
@@ -38,5 +39,11 @@ public class UserServiceImpl implements UserService {
 	  user.setRoles(new HashSet<Role>(Arrays.asList(userRole)));
 	  userRepository.save(user);
 	 }
+
+	 @Override
+	 public List<User> findAll() {
+		 return (List<User>) userRepository.findAll();
+	 }
+	 
 
 }

@@ -4,6 +4,7 @@ D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\service\Impl\UserSe
 D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\service\UserService.java
 D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\configuration\WebMvcConfig.java
 D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\repository\RoleRespository.java
+D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\controller\AdminController.java
 D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\configuration\SecurityConfiguration.java
 D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\model\Role.java
 D:\Eclipse\Workspace8\HiddenusWeb\src\main\java\com\hiddenus\model\User.java

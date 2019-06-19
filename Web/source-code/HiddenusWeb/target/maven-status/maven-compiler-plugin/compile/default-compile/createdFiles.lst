@@ -1,9 +1,9 @@
 com\hiddenus\configuration\SecurityConfiguration.class
-com\hiddenus\repository\UserRepository.class
-com\hiddenus\service\UserService.class
 com\hiddenus\service\Impl\UserServiceImpl.class
 com\hiddenus\model\Role.class
 com\hiddenus\HiddenusWebApplication.class
+com\hiddenus\repository\UserRepository.class
+com\hiddenus\service\UserService.class
 com\hiddenus\controller\HomeController.class
 com\hiddenus\repository\RoleRespository.class
 com\hiddenus\controller\UserController.class

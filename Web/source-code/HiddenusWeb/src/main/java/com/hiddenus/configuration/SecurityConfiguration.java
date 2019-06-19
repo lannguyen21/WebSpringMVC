@@ -38,8 +38,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	 
 	 @Override
 	 protected void configure(HttpSecurity http) throws Exception{
+		 
+		http.authorizeRequests().antMatchers("/admin", "/admin/**").hasAuthority("ADMIN").anyRequest();
 		  
 		http.authorizeRequests()
+			.antMatchers("/**").permitAll()
 		   .antMatchers("/js/**").permitAll()
 		   .antMatchers("/images/**").permitAll()
 		   .antMatchers("/css/main.css").permitAll()

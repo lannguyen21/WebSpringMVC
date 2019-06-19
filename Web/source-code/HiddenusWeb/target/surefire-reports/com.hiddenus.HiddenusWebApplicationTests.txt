@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.hiddenus.HiddenusWebApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.908 s - in com.hiddenus.HiddenusWebApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.96 s - in com.hiddenus.HiddenusWebApplicationTests
