@@ -42,6 +42,8 @@ public class ProductController {
     @GetMapping(value = { "", "/" })
 	public ModelAndView product() {
 		  ModelAndView model = new ModelAndView();
+		  Iterable<Product> product = productService.getAllProducts();
+		  //product.get
 		  model.setViewName("product/MenShortSleeves");
 		  return model;
 		  

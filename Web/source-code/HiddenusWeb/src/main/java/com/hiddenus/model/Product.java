@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="product")
+@Table(name="products")
 public class Product {
 
 	@Id
@@ -25,13 +25,13 @@ public class Product {
 	 private String name;
 	 
 	 @Column(name="price")
-	 private Long price;
+	 private Double price;
 	 
 	 @Column(name="create_date")
 	 private Date date;
 	 
 	
-	 /*public int getId() {
+	/* public int getId() {
 	  return id;
 	 }
 
@@ -55,11 +55,11 @@ public class Product {
 		  this.name = name;
 	 }
 	 
-	 public Long getPrice() {
+	 public Double getPrice() {
 		  return price;
 	 }
 
-	 public void setPrice(Long price) {
+	 public void setPrice(Double price) {
 		  this.price = price;
 	 }
 	 

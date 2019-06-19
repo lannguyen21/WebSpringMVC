@@ -15,5 +15,10 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 	//Page<Product> showAllProduct(Pageable pageNumber);
 
 	//Page<Product> showAllProduct(Pageable pageNumber);
+	//Iterable<Product> getAllProducts();
+
+	//Product getProduct(int id);
+
+//	Product save(Product product);
 	
 }
