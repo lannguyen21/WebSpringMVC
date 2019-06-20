@@ -16,6 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.hiddenus.model.Product;
 import com.hiddenus.model.User;
+import com.hiddenus.repository.ProductRepository;
 import com.hiddenus.service.ProductService;
 
 @Controller
@@ -25,6 +26,8 @@ public class ProductController {
 	@Autowired
 	 private ProductService productService;
 	
+	@Autowired
+	 private ProductRepository productRepository;
 	/*@RequestMapping(value = "/product", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public Page<Product> showAllProduct(@RequestParam int currentPage, @RequestParam int pageSize) {
 		Page<Product> product = productService.showProduct(currentPage, pageSize);

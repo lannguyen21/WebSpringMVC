@@ -20,5 +20,6 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 	//Product getProduct(int id);
 
 //	Product save(Product product);
+	Product findById(int id);
 	
 }

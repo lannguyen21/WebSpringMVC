@@ -18,8 +18,8 @@ public class Product {
 	 @Column(name="productID")
 	 private int id;
 	 
-	 @Column(name="image")
-	 private String image;
+	 @Column(name="image", length = Integer.MAX_VALUE, nullable = true)
+	 private byte[] image;
 
 	 @Column(name="name")
 	 private String name;
@@ -31,7 +31,7 @@ public class Product {
 	 private Date date;
 	 
 	
-	/* public int getId() {
+	 public int getId() {
 	  return id;
 	 }
 
@@ -39,11 +39,11 @@ public class Product {
 	  this.id = id;
 	 }
 
-	 public String getImage() {
+	 public byte[] getImage() {
 	  return image;
 	 }
 
-	 public void setImage(String image) {
+	 public void setImage(byte[] image) {
 	  this.image = image;
 	 }
 	 
@@ -69,5 +69,5 @@ public class Product {
 
 	 public void setDate(Date date) {
 		  this.date = date;
-	 }*/
+	 }
 }

@@ -1,5 +1,7 @@
 package com.hiddenus.service;
 
+import java.util.List;
+
 import org.springframework.data.domain.Page;
 
 import com.hiddenus.model.Product;
@@ -14,4 +16,5 @@ public interface ProductService {
 
 	Product save(Product product);
 
+	List<String> Product(int id);
 }
